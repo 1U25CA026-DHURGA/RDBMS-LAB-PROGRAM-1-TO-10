@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
+
+CREATE DATABASE dhurga;
+USE dhurga;
 
 CREATE TABLE Student(
     StudentID INT(5) PRIMARY KEY,
@@ -9,11 +9,5 @@ CREATE TABLE Student(
     Gender VARCHAR(10),
     DepartmentID INT(5)
 );
-
--- Alter Student table
-
--- Add Email
-
--- Add PhoneNumber
-
--- Display structure
+alter table Student add(Email varchar(30), phonenumber int(10));
+desc Student;
