@@ -1,17 +1,4 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
-
--- Create Student table
-
--- StudentID
-
--- StudentName
-
--- DOB
-
--- Gender
-
--- DepartmentID
-
--- Add constraints
+create database dhurga;
+use dhurga;
+create table Student(StudentID int(5)primary key, StudentName varchar(30),DOB Date, Gender varchar(10), DepartmentID int(5));
+desc Student;
